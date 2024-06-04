@@ -1,6 +1,4 @@
-//Criamos uma arrow function que recebe um Array e usamos o 
-//array.map para iterar sobre cada elemento do array original.
-//Ditamos o Array pelo JS.
+
 function ex1(){
     const dobrarValores = (array) => 
     array.map((numero) => numero * 2);
@@ -10,9 +8,6 @@ function ex1(){
     console.log(numerosDobrados); 
 };
 
-//Criamos uma arrow function que recebe um Array e usamos o 
-//array.sort com uma função de comparação que verifica o comprimento de cada palavra.
-//Ditamos o Array pelo JS.
 function ex2(){
     const ordenarPorComprimento = (array) => 
     array.sort((a, b) => a.length - b.length);
@@ -22,9 +17,6 @@ function ex2(){
     console.log(palavrasOrdenadas);
 }; 
 
-//Usamos um loop for para percorrer cada número no array original e verificamos se ele é par. 
-//Se for,adicionamos ao novo array numerosPares. 
-//O resultado é o array com os números pares.
 
 function ex3_1(){
     function filtrarNumerosPares(array) {
@@ -41,10 +33,6 @@ function ex3_1(){
       const pares = filtrarNumerosPares(numeros);
       console.log(pares);
 };
-
-//Nessa função, usamos o filter podemos criar um novo array contendo apenas os números pares do array original. 
-//A expressão (num) => num % 2 === 0 verifica se cada número é par utilizando módulo. 
-//O resultado é o array pares com os números pares.
 
 function ex3_2(){
     const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
