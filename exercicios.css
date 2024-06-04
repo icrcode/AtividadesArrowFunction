@@ -1,0 +1,10 @@
+.botao {
+    background-color: rgb(216, 216, 216);
+    padding: 20px;
+  }
+  #simples{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+  }
