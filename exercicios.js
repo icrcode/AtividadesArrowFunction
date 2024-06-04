@@ -9,3 +9,16 @@ function ex1(){
     const numerosDobrados = dobrarValores(numeros);
     console.log(numerosDobrados); 
 };
+
+//Criamos uma arrow function que recebe um Array e usamos o 
+//array.sort com uma função de comparação que verifica o comprimento de cada palavra.
+//Ditamos o Array pelo JS.
+function ex2(){
+    const ordenarPorComprimento = (array) => 
+    array.sort((a, b) => a.length - b.length);
+
+    const palavras = ["Lightning McQueen", "The King", "Cop", "Fabulous Hudson Hornet"];
+    const palavrasOrdenadas = ordenarPorComprimento(palavras);
+    console.log(palavrasOrdenadas);
+}; 
+
