@@ -22,3 +22,34 @@ function ex2(){
     console.log(palavrasOrdenadas);
 }; 
 
+//Usamos um loop for para percorrer cada número no array original e verificamos se ele é par. 
+//Se for,adicionamos ao novo array numerosPares. 
+//O resultado é o array com os números pares.
+
+function ex3_1(){
+    function filtrarNumerosPares(array) {
+        const numerosPares = [];
+        for (const numero of array) {
+          if (numero % 2 === 0) {
+            numerosPares.push(numero);
+          }
+        }
+        return numerosPares;
+      }
+      
+      const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const pares = filtrarNumerosPares(numeros);
+      console.log(pares);
+};
+
+//Nessa função, usamos o filter podemos criar um novo array contendo apenas os números pares do array original. 
+//A expressão (num) => num % 2 === 0 verifica se cada número é par utilizando módulo. 
+//O resultado é o array pares com os números pares.
+
+function ex3_2(){
+    const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const pares = numeros.filter((num) => num % 2 === 0);
+
+    console.log(pares);
+};
+
