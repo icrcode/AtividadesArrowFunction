@@ -17,7 +17,6 @@ function ex2(){
     console.log(palavrasOrdenadas);
 }; 
 
-
 function ex3_1(){
     function filtrarNumerosPares(array) {
         const numerosPares = [];
